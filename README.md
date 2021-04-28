@@ -22,5 +22,6 @@
     - modules' sizes analyzing by `webpack-bundle-analyzer` (`npm run stats`)
     
 ## Notes
+- styles are necessarily imported into `index.ts` (`entry` point in webpack)
 - No `babel` (only modern browsers support)
 - See `webpack.config.js` comments for more info
