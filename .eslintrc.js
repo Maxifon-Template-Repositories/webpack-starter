@@ -17,6 +17,11 @@ module.exports = {
         '@typescript-eslint'
     ],
     'rules': {
-        'quotes': ['warn', 'single']
+        'quotes': ['warn', 'single'],
+        // note you must disable the base rule as it can report incorrect errors
+        'semi': 'off',
+        '@typescript-eslint/semi': ['error'], // semicolon at the end of line (just
+        // like in Java) )
+        '@typescript-eslint/no-inferrable-types': 'off'
     }
 };
